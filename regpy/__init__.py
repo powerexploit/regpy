@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 from re import findall
 
 # text function to grab all alphabetic data.
