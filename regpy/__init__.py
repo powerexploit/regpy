@@ -12,7 +12,7 @@ def text(data):
 
 # emails function to grab all valid mails id's & join them. 
 def emails(data):
-	pattern = r'[a-zA-Z0-9_]+@[a-zA-Z0-9]+\.[a-z]{1,3}'
+	pattern = r'[a-zA-Z0-9+._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9_-]{1,3}'
 	expression = findall(pattern,data)
 	if expression:
 		print('-'.join(expression))
