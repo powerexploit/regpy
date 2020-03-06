@@ -40,7 +40,7 @@ def postal_code(data):
 
 # url function to grab all urls in list.
 def url(data):
-	pattern = r'https://[a-zA-Z0-9]+\.[a-z]'
+	pattern = r'https://[a-zA-Z0-9]+\.[a-z]{1,3}'
 	expression = findall(pattern,data)
 	if expression:
 		return expression
